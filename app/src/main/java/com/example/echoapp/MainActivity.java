@@ -3,19 +3,21 @@ package com.example.echoapp;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 
+import androidx.appcompat.widget.AppCompatEditText;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.view.WindowCompat;
 
-import com.example.echoapp.databinding.ActivityMainBinding;
+
+
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,14 +31,9 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         ExtendedFloatingActionButton exFAB = findViewById(R.id.fab);
-        exFAB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAnchorView(R.id.fab)
-                        .setAction("Action", null).show();
-            }
-        });
+        TextView tv = findViewById(R.id.tv_id);
+        AppCompatEditText et = findViewById(R.id.et_id);
+        exFAB.setOnClickListener(view -> tv.setText(et.getText().toString()));
     }
 
     @Override

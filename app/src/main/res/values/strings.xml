@@ -43,4 +43,7 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="view_text">Please type in text here</string>
+    <string name="orig_tv_text">Shlomo\'s Echo App</string>
+    <string name="fab_text">Copy</string>
 </resources>

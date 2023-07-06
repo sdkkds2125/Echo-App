@@ -28,6 +28,10 @@
         android:layout_gravity="bottom|center"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:text="@string/fab_text"
+        app:icon="@drawable/ic_action_name"
+        app:iconGravity="textEnd"
+        app:iconPadding="20dp"
+        app:iconSize="22dp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
