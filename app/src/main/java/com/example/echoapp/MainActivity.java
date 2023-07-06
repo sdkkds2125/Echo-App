@@ -26,10 +26,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setUpToolBar();
+        setUpFAB();
+    }
 
+    private void setUpToolBar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+    }
 
+    private void setUpFAB() {
         ExtendedFloatingActionButton exFAB = findViewById(R.id.fab);
         TextView tv = findViewById(R.id.tv_id);
         AppCompatEditText et = findViewById(R.id.et_id);
